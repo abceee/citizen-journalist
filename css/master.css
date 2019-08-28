@@ -1,0 +1,686 @@
+/* CSS Document */
+
+/*The margin and padding are predefined at a default "0" to avoid compatibility issues across browsers in reference to Steve Dennis' (2006) article on 
+the basics of a CSS layout and W3 Schools' (2011) tutorial, as default margins and/ or padding are commonly set on almost all browsers. Having this set 
+allowed me to specify a margin value to the container div without any extra margins or padding to worry about. The background colour is set to white 
+in confirming my design decision to have a neutral and clean overall look to the website.*/
+html, body {
+margin: 0;
+padding: 0;
+background-color: #ffffff;
+}
+/*The font-family specified is consistent with my design decision to have the body in a sans-serif font with Arial topping the list of preferred, associated 
+fonts that are commonly used in different browsers (Freeman and Freeman 2006, 347). The font-size is set to "small", following Freeman and Freeman's 
+(2006, 354) recommendation to use a keyword to specify the font size in the body rule as a default, and then specifying font sizes in other elements 
+relative to this by using either em or percentages. This is backed up by looking into W3Schools' (2011) article on using a combination of percent and em 
+that works across different browsers. 
+The line height is set at 1.8em for legibility and to make the text more scannable as I have indicated in my blueprint with reference to Patrick Lynch and 
+Sarah Horton's (2008) article on having good typography on a website including using relative measures (in this case, "em") to set the line height. The color 
+of the text is black set on a white background to achieve a neutral, minimalist and readable visual appearance consistent with the design decision I have 
+stated in my blueprint, with reference again to Cameron Chapman's (2010) article on color theory for designers.*/
+body {
+font-family: Arial, Geneva, Verdana, sans-serif;
+font-size: small;
+color: #000;
+}
+/*The website container is set to 960px wide as a common screen resolution and is centered to contain the main elements of the design. The hash sign in front 
+of the id specifies it is an id attribute. The margin value is set to "0 auto" or dependent on the browser while the background color is set to white to 
+remain consisten with my initial design decision for a cleaner, neutral design look.*/
+#container {
+width: 960px;
+margin: 0 auto;
+background: #ffffff;
+}
+/*The background of the website title was changed from black on light gray background - as it appeared to be somewhat dreary - to a more vibrant yet still 
+refreshing and calming colour using a background image scanned and manipulated in Photoshop, with reference to Cameron Chapman's (2010) article on color 
+theory. The white text, I believe, provides a good contrast instead of black. Ample padding is provided for the title and tagline.*/
+#header {
+background-image: url(../images/header-background.jpg);
+background-repeat: repeat;
+padding: 15px;
+}
+/*The font-family specified for the h1 follows my design decision to have a sans-serif font particularly the commonly used Arial in browsers as one 
+of two typefaces used for this website with reference again to Michael Martin's (2009) article on design patterns and best practices in typographic 
+designs. The title is set to bold and font size set at a percentage that works well with different browsers.*/
+#header h1 {
+font-family: Arial, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 230%;
+text-align: left;
+letter-spacing: 0.05em;
+}
+/*The :link, :visited, and :active selectors below are set to have no text decoration (specifically underline) and no color for the header.*/
+#header h1 a:link {
+text-decoration: none;
+color: #ffffff;
+}
+#header h1 a:visited {
+text-decoration: none;
+color: #ffffff;
+}
+#header h1 a:active {
+text-decoration: none;
+color: #ffffff;
+}
+/*The specifications below are similar and consistent to the h1. Padding values are added and letter-spacing defined in a relative unit for legibility 
+with reference to Matt Cronin's (2009) article on the principles of readable typography on the Web.*/
+#header h3 {
+font-family: Arial, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 115%;
+color: #ffffff;
+margin: 0;
+text-align: left;
+padding: 10px 0 10px 0;
+letter-spacing: 0.125em;
+}
+/*The width is set to 960px consistent to the width of the container and specified as it is necessary for any floated elements to function properly across 
+browsers while the bottom margin is specified to provide appropriate distance to the left navigation, content and sidebar with reference to Russ Weakley's 
+(2010) tutorial on a three-column layout.*/
+#navigation {
+width: 960px;
+float: left;
+background: #efeaea;
+margin-bottom: 25px;
+}
+/*Following Max Design's (2010) advice, the margin and padding are set to "0" in order for the left-indentation of the unorderest list to work properly and 
+consistently across different browsers.*/
+#navigation ul {
+margin: 0;
+padding: 0;
+}
+/*The bullet points to the list items are removed by specifying "none" to the list-style property and having them displayed inline for a horizontal appearance.*/
+#navigation ul li {
+list-style: none;
+display: inline;
+}
+/*The <a> element in the list is specified with the font-family consistent to my design decision to use Arial primarily in the list of preferred fonts with the 
+size set at a percentage again. The display is set to block to turn the links into block elements and making the whole link area clickable. The width is 
+set to the default "auto" to centrally align the navigation. Padding is added, the colour set that complements the background and with the text readable while 
+no text decoration is specified so the links will not be underlined, and a border is added for visual separation of the links with the style not appearing 
+distracting to users.*/
+#navigation li a {
+font-family: Arial, Geneva, Verdana, sans-serif;
+font-size: 100%;
+display: block;
+float: left;
+width: auto;
+padding: 10px;
+padding-top: 12px;
+padding-bottom: 12px;
+color: #003366;
+text-decoration: none;
+border-right: 1px solid #fff;
+}
+/*The :visited selector for the navigation links are specified not to have any text decoration, but a "washed out" colour is set when a user has clicked on the 
+link as a usability feature with reference to Jakob Nielsen's (2004) article. The :visited selector comes before the :hover selector, following the guideline 
+of W3 Schools (2011) on the proper order of the selectors in the CSS definition for effective implementation.*/
+#navigation li a:visited {
+text-decoration: none;
+color: #733c68;
+}
+/*The a:hover pseudo-class is defined with the colour of the links slightly changing when hovered over while the text-decoration shifts from "none" to 
+"underline" to reinforce its obvious clickable state for accessibility with reference to Jakob Nielsen's (2004) article.*/
+#navigation li a:hover {
+color: #4f7ed5;
+text-decoration: underline;
+}
+/*The left navigation below is floated left as part of the three-column fixed width design layout with Max Design's (2010) tutorial as guide to create my local 
+navigation containg the Writing Tools and Humanitarian Gallery as its main sections and three sub-sections for each. The width is set to 175px to 
+accommodate the text length of the sub-sections with the appropriate padding and margin-top values set with respect to the surrounding white space.*/
+#left-navigation {
+float: left;
+width: 175px;
+padding: 15px 10px 0 0;
+margin-top: 10px;
+}
+/*Following Max Design's (2010) advice, the margin and padding are set to "0" in order for the left-indentation of the unorderest list to work properly and 
+consistently across different browsers.*/
+#left-navigation ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+/*The block element is specified to the display property in order to make the whole link area with specified width clickable and not just the text itself, 
+following the tutorial of Max Design (2010) and to improve usability. The colours specified allows for uniformity with the whole website design while 
+ensuring readable text. The default underline to the links are removed by specifying "none" to the text-decoration property so as the menu does not look 
+cluttered with lines. (This changes when hovered over as discussed in the a:hover definition below). Following the tutorial's padding advice to create 
+visual distinction between the main section and sub-sections, the total amount of padding specified here adds up to 20px as well as in the CSS definition 
+that follows this (#left-navigation li li a). The leading is defined through the line-height property being set in a relative unit to enhance legibility. 
+*/
+#left-navigation a {
+display: block;
+width: 160px;
+color: #ffffff;
+background-color: #036;
+padding: 7px 12px 7px 8px;
+text-decoration: none;
+font-family: Arial, Geneva, Verdana, sans-serif;
+font-size: 100%;
+font-weight: bold;
+line-height: 1.8em;
+border-bottom: 1px solid #fff;
+}
+/*The CSS code below follows the Max Design (2010) tutorial on creating a visual distinction between the main sections of the left navigation and the 
+sub-sections of each by applying most of the rules used in the #left-navigation a" but changing the selector to target only the nested list items.*/
+#left-navigation li li a {
+display: block;
+padding: 5px 4px 10px 16px;
+border-bottom: 1px solid #fff;
+background: #e6eCeC;
+width: 160px;
+font-weight: normal;
+}
+/*The links are then specified here not to have an underline and the colour is changed, slightly differing from the background to make it readable.*/
+#left-navigation li li a:link {
+text-decoration: none;
+color: #003366;
+}
+/*The colour of visited links changes as per Jakob Nielsen's (2004) article highlighting this "old usability guideline" for navigation design.*/
+#left-navigation li li a:visited {
+text-decoration: none;
+color: #733c68;
+}
+/*The a:hover pseudo-class is placed after a:link and a:visited in the stylesheet as per W3 Schools' (2011) in order for these pseudo-classes to be effective. 
+The color of the links when hovered over slightly changes and extra adding is added for some style while the text-decoration shifts from "none" to "underline" 
+to indicate that these are links.*/
+#left-navigation li li a:hover {
+color: #4f7ed5;
+margin: 0;
+padding-left: 25px;
+text-decoration: underline;
+}
+/*Styling the breadcrumb navigation follows the tutorial of Mark Newhouse (2002) using nested lists for visual heirarchy and as an effective secondary 
+navigation. This is styled consistent and complementary to the over visual appearance of the website without appearing distracting to users, as advised 
+by Jacob Gube (2009) in his article on best practices in designing breadcrumbs.*/
+#bread {
+color: #6a6ea5;
+background-color: #fff;
+padding: 3px;
+margin-bottom: 0;
+}
+/*The series of nested lists is styled with the left margin and left padding specified and displayed inline for it to be horizontal. No border is specified as 
+part of the technique not to make this type of navigation distracting.*/
+#bread ul {
+margin-left: 4px;
+padding-left: 1.5px;
+display: inline;
+border: none;
+}
+/*The font size is set at a relative percentage unit and appearing smaller than the normal text size so users are not distracted from the main navigation yet 
+it serves it purpose to indicate which page users currently are, where they can go to next and how to get back. Letter spacing is also specified to make the 
+text more readable. The bullets are removed by specifying "none" to the list-style property. Alignment is achieved through the margin and padding values set.*/
+#bread ul li {
+font-size: 78%;
+letter-spacing: 0.1em;
+margin-left: 0;
+padding-left: 1px;
+border: none;
+list-style: none;
+display: inline;
+}
+/*The :before pseudo element is used in the style definitions below to insert the right angle character/ greater than sign and no separator is generated 
+within the content, as I have learned from the tutorial with guide from ASCII on HTML codes for special characters.*/
+#bread-gen ul li:before {
+content: "\003e";
+color: #f99;
+}
+#bread-gen ul li.current:before {
+content: " ";
+}
+/*The content container, guided by Russ Weakley's (2010) tutorial, is part of the three-column layout with the element being floated to the left and the width 
+set along with padding and specific margins to accommodate the website's content.*/
+#content {
+float: left;
+width: 380px;
+padding: 5px 20px 40px 5px;
+margin-left: 40px;
+margin-top: 2px;
+}
+/*The h2 tag is defined by margin settings, font weight and colour consistent to the design and to ensure that the surrounding white space is considered. 
+Bottom padding is defined as per Mary's advice on refining the spacing between the header and paragraph for better readability. The leading is set at 
+1.4em, following Harry Roberts' (2011) article on guidelines for technical typography on the Web. Also in reference to Harry Roberts' article along with 
+Mark Boulton's (2006) article, the word and letter spacing properties are specified to make the heading more readable.*/
+#content h2 {
+margin: 13px 0 0 0;
+padding-bottom: 8px;
+font-weight: bold;
+color: #000;
+line-height: 1.4em;
+word-spacing: 0.09em;
+letter-spacing: 0.06em;
+}
+/*The font-family is specified for both h2 and h3 with Georgia topping the list of preferred fonts, consistent to my design decision to use serif to provide 
+a good contrast between the heading and body text (specified as sans-serif), as I have referenced in my blueprint to Michael Martin (2009) on Georgia as a 
+widely used serif typeface. The font size is increased relative to the body text while the line height is again specified for better readability.*/
+#content h2, h3 {
+font-family: Georgia, Times, serif;
+font-size: 150%;
+}
+/*The h3 font size is specified at a percentage relative to the body text.*/
+#content h3 {
+font-size: 120%;
+letter-spacing: 0.05em;
+padding-bottom: 8px;
+padding-top: 10px;
+}
+/*The link is specified not to be underlined but with a defined colour to make users know it is a link with reference to Jakob Nielsen's (2004) article, 
+stating that underlines from links can be safely removed as long as the visual appearance of the text makes it understandable to readers that it is a 
+link. The text decoration underline, however, is used when hovered over as an accessibility function.*/
+#content h3 a:link {
+text-decoration: none;
+color: #1c216a;
+}
+/*The link changes colour when it is visited to indicate to users what they have visited with reference again to Jakob Nielsen's (2004) article on changing 
+the colour of visited links as a usability feature. The colour is consistent throughout the website*/
+#content h3 a:visited {
+text-decoration: none;
+color: #733c68;
+}
+/*As mentioned above, the text decoration is changed to underline when hovered over with the colour changing slightly as a style feature.*/
+#content h3 a:hover {
+color: #4f7ed5;
+text-decoration: underline;
+}
+/*The values for the h4 tag are pre-defined in order for its text size to work consistently with IE7 prior to using the class attributes to style and align 
+these headings in the Asking focused questions and Finding your angle pages.*/
+#content h4 {
+font-family: Arial, Geneva, Verdana, sans-serif;
+color: #000;
+font-size: 100%;
+}
+/*The background image used to style the h4 tags in the Asking focused questions is placed with the height set to accommodate the two-line heading texts, 
+with ample padding values defined to ensure ample spacing with the paragraphs and other surrounding elements, with references to Michael Martin's (2009) 
+article and Anthony Tseng (2011) on using background images. Reference to W3 Schools (2011) is given for the classname, stating that digits can be used 
+and in this case, number "1" is indicated as similar styling is used for the Finding your angle section h4 tags, as seen on the next CSS definition.*/ 
+.heading-background1 {
+background-image: url(../images/questionmark-background.gif);
+background-repeat: no-repeat;
+height: 40px;
+padding: 10px 5px 15px 15px;
+margin: 0;
+}
+/*Similar values are set to achieve consistency for the tutorial part of the Writing tools section except that a different background image is used 
+relevant to the topic of finding a story angle (hence, a magnifying glass).*/
+.heading-background2 {
+background-image: url(../images/magnifying-glass-background.gif);
+background-repeat: no-repeat;
+height: 40px;
+padding: 10px 5px 15px 15px;
+margin: 0;
+}
+/*Alignment of the h4s is achieved using this class in both Asking focused questions and Finding your angle pages by floating the element, setting 
+a width and defining the margin with reference to Max Design's tutorials on floating images combined with knowledge I gained from the Freeman and Freeman 
+(2006, 199) textbook and Louis Lazaris' (2009) article on the CSS float property. Letter-spacing and line-height values are indicated for better 
+readability and the font-size set relative to the site's body text.*/
+.align {
+float: left;
+width: 215px;
+margin-left: 70px;
+letter-spacing: 0.025em;
+font-size: 100%;
+line-height: 1.8em;
+}
+/*The leading set to 1.8em and text aligned left as the most legible option with reference to Harry Roberts' (2011) article, stating that continuous copy 
+should have large leading for easier reading. The left alignment of the text is also applied to my headings and sub-headings, confirming my design 
+decision during the blueprint process. The top and bottom margins are specified to create more space for readability. The margin values set ample space 
+between the text and surrounding elements so as not to appear crowded.*/
+#content p {
+line-height: 1.7em;
+text-align: left;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-right: 15px;
+}
+/*The list elements within the website's content are provided with enough padding to clear some area around it. Similar reference to Harry Roberts' (2011) 
+article is given to the line height set in the bulleted and linked lists found on my website to provide ample spacing in between.*/
+#content li {
+padding-left: 5px;
+padding-bottom: 10px;
+line-height: 1.8em;
+}
+/*The text decoration is set to "none" in the links particular to the Useful Resources website to avoid clutter and with rerference to Jakob Nielsen's 
+(2004) article that links can be safely removed as long as it is visually clear that they are links and in this case, it is also clearly stated in the 
+body text that users can view the list of websites as links with the title attribute stating that clicking on a link opens in a new website window.*/
+#content li a {
+text-decoration: none;
+line-height: 1.8em;
+}
+/*Again, the colour of the link changes when the user has clicked on it.*/
+#content li a:visited {
+text-decoration: none;
+color: #733c68;
+}
+/*Again, the text decoration is changed to underline when hovered over with the colour changing slightly.*/
+#content li a:hover {
+color: #06c;
+text-decoration: underline;
+}
+/*This div is part of the three-column layout tutorial by Russ Weakley (2010) with the sidebar floating on the third column. The width is specified so as 
+to avoid cross-browser issues and margins defined.*/
+#sidebar {
+float: right;
+width: 300px;
+margin: 15px 5px 20px 0;
+padding: 0;
+}
+/*The div class "floatright" is within the sidebar div and present in all web pages except "About me & contact." It defines the images floated to the right 
+of the sidebar with the width specified as required to any floating elements in references to Max Design's (2010) tutorial and Bert Bos' (2011) article on 
+floating images and captions.*/
+.floatright {
+float: right;
+width: 300px;
+margin: 5px 0 20px 0;
+padding: 0;
+}
+/*The width of the images in the floatright div is specified uniformly. The "descendant selector rule" is applied here but narrowed down further to the img 
+element as a descendant of the div in order to apply the width only to the image without affecting other images within any other divs again referencing 
+Max Design's (2010) tutorial. The border style "outset" replaces the solid style initially used in the draft website, as outset looks more visually 
+appealing.*/
+.floatright img {
+width: 298px;
+margin: 0 5px 10px 0;
+padding: 2px;
+border-style: outset;
+border-color: #cccccc;
+border-left-width: 1px;
+border-top-width: 1px;
+}
+/*The same rule learned from Max Design (2010) and Bert Bos (2011) is applied here to the <p> element that contains the captions with the margins, text 
+alignment, line height and font specifications indicated while keeping in mind legibility and simplicity with reference to Cameron Chapman's (2008) article 
+on Image Caption Design.*/
+.floatright p {
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: left;
+font-style: italic;
+font-size: 85%;
+text-indent: 0;
+line-height: 1.8em;
+}
+/*The blockquote falls within the sidebar div and is floated right with width and height specified to accommodate the text and scanned background image, which 
+I have manipulated using Photoshop, setting it at no-repeat. The quote is in italic and bold to highlight it.*/
+blockquote {
+float: right;
+width: 250px;
+height: 300px;
+margin: 15px 0 10px 0;
+padding: 20px;
+font-style: italic;
+font-weight: bold;
+background-image: url(../images/computer-background.jpg);
+background-repeat: no-repeat;
+}
+/*Padding is added to make it fit in its background image*/
+blockquote p {
+padding: 2px;
+margin: 0;
+line-height: 1.8em;
+}
+/*The checklist id used specifically for the unordered list in the Wrapping up & extras section, with the list-style set to "none", as icons created in 
+Photoshop are used as background image instead of bullet points. The margin is also defined to "0" for the list to work well across browsers especially IE7.*/
+#checklist {
+list-style: none;
+padding-left: 0;
+margin-left: 0;
+}
+/*The line-height is again set to a more readable value along with ample padding around the element. An icon created in Photoshop serves as background image 
+and floated in the next style definition.*/
+#checklist li {
+line-height: 1.8em;
+padding: 0 5px 15px 50px;
+background-image: url(../images/checkmark.gif);
+background-repeat: no-repeat;
+}
+/*Similar styling is done for the Extras part of the Wrapping up page, but using another id selector with a different background image, as shown in the 
+next two style definitions.*/
+#tips {
+list-style: none;
+padding-left: 0;
+margin-left: 0;
+}
+#tips li {
+font-weight: bold;
+padding-left: 50px;
+background-image: url(../images/tips-icon.gif);
+background-repeat: no-repeat;
+}
+/*The paragraphs are styled with normal font-weight and the leading set to the same value as the rest of the paragraphs on the website for consistency.*/
+#tips li p {
+font-weight: normal;
+line-height: 1.8em;
+}
+/*Padding is specified for the top of the list of news in the Latest news & pictures section to create space between the paragraph introducing the section 
+and the succeeding list of news briefs.*/
+#newslist {
+list-style: none;
+padding: 0;
+padding-top: 5px;
+margin: 0;
+}
+/*The text on the list is set to bold to give it prominence with ample padding and margin set around the element. The background images for each news 
+brief are aligned and positioned in good distance from the text.*/
+#newslist li {
+font-weight: bold;
+padding: 0 5px 5px 50px;
+margin-top: 2px;
+background-image: url(../images/sos.jpg);
+background-repeat: no-repeat;
+background-position: top left;
+}
+/*The paragraphs within the list items are set in normal font with the line height specified along with padding at the bottom for easier reading and 
+clear separation of one body of text to the next. Adding to this is the definition of a border at the bottom of each news brief, with reference to 
+Freeman and Freeman (2006, 411).*/
+#newslist li p {
+font-weight: normal;
+line-height: 1.8em;
+padding-bottom: 15px;
+border-bottom: 2px solid;
+border-bottom-color: #003399;
+}
+/*The images used in the Writing Tools and Humanitarian Gallery sections are floated left with the width specified and text wrapping around it, specifying the 
+margins so as not to clash with the text, with reference to Max Design's tutorials on floating images.*/
+img {
+float: left;
+width: 100px;
+margin: 5px 30px 5px 1px;
+padding-bottom: 5px;
+border-style: none;
+}
+/*The button element is floated right with a width specified for it to work across browsers. Colour is defined complementary to the website design with 
+font size set at a relative percentage and line height. The background image created via Photoshop is used and set at not to repeat with proper 
+positioning to accommodate the text superimposed. This is again in reference to the articles of Janko Jovanovic (2009), Jakob Nielsen (2007) and Andrew 
+Maier (2008) in using this as a "call to action" means and applying basic styling.*/
+.button {
+float: right;
+width: 95px;
+padding: 5px;
+padding-bottom: 7px;
+color: #0e039b;
+font-size: 85%;
+font-weight: bold;
+line-height: 1em;
+text-align: center;
+text-decoration: none;
+background-image: url(../images/button.gif);
+background-repeat: no-repeat;
+background-position: right;
+}
+/*The series of hover-gallery style definitions below follow the tutorial of Nathan Smith (2006) on creating the image gallery for the Lates news and pictures 
+sub-section of the Humanitarian Gallery of my website. This replaces the "thumbnail" class I initially had placed in my draft website. The list style below is 
+set to none for the bullets to be removed and the cursor for when the mouse is hovered over the image is set to default with the images not linked to open 
+in a new window. Instead the hover effect enlarges the image when hovered over. (Please note that a separate IE stylesheet with the file name ie7.css is used 
+for the hover effect to enlarge photos on mouse-over, following the tutorial of Nathan Smith).*/
+#hover-gallery {
+list-style: none;
+cursor: default;
+}
+/*Initial practise with the tutorial made it difficult for the hover to work in IE7, but defining the element to float left here and specifying a width made 
+it work with IE7 along with conditional comments placed in a separate IE stylesheet.*/
+#hover-gallery a {
+cursor: default;
+float: left;
+width: 300px;
+}
+/*The preview class display is initially set to "none" and when hovered over, turns into a block element as specified in the next style defintion.*/
+#hover-gallery a .preview {
+display: none;
+}
+/*As mentioned above, the display is set to "block" when hovered over. The position property is specified as "absolute" relative to the block that contains it,  
+with the z-index property defined to lift over the other elements. Its top and left properties are defined in the negative and the position of the box running 
+perpendicular to the display set to 1 so that it occupies the same space or location when hovered over.*/
+#hover-gallery a:hover .preview {
+display: block;
+position: absolute;
+top: -33px;
+left: -45px;
+z-index: 1;
+}
+/*The images in the gallery are given a white background and the border set to "outset" and colour inherited so as to maintain consistency in the design with 
+additional reference to Freeman and Freeman (2006, 410). The width and height are set for the thumbnail version of the images with padding added and vertically 
+aligned from the top.*/
+#hover-gallery img {
+background: #fff;
+border-color: #aaa;
+border-style: outset;
+border-left-width: 1px;
+border-top-width: 1px;
+color: inherit;
+padding: 2px;
+vertical-align: top;
+width: 100px;
+height: 75px;
+}
+/*The list items are floated left with the width defined, colour inherited again and displayed as an inline box with margin, padding values added. The 
+position is specified as "relative" to its normal position.*/
+#hover-gallery li {
+float: left;
+width: 110px;
+color: inherit;
+display: inline;
+margin: 3px;
+padding: 1px;
+position: relative;
+}
+/*The colour of the border changes to black when previewed with the width and height set to higher values for users to see the larger image when they 
+mouse over the images.*/
+#hover-gallery .preview {
+border-color: #000;
+width: 280px;
+height: 230px;
+}
+/*The captions contained in the p element are aligned to the left, styled as italic, its font size defined as smaller to the relative size of the 
+body text with the line height set (with reference again to Harry Robert's 2011 article on setting the appropriate leading for text).*/
+#hover-gallery p {
+margin: 5px;
+text-align: left;
+font-style: italic;
+font-size: 85%;
+text-indent: 0;
+line-height: 1.5em;
+}
+/*The margin and padding alignment for the elements below in the contact form on the About me & contact page are pre-defined to zero.*/
+form,input,textarea {
+margin: 0;
+padding: 0;
+color: #ffffff;
+}
+/*Alignment is set for the contact form box with the image scanned and modified using Photoshop as background image.*/
+div.box {
+margin: 20px 0 40px 0;
+padding: 10px;
+float: left;
+width: 280px;
+background-image: url(../images/peace-sign.jpg);
+}
+/*The heading for the box is aligned as well and styled consistent to the website design.*/
+div.box h4 {
+color: #000;
+padding: 0;
+margin: 10px 0 10px 0;
+}
+/*The short paragraph within the contact form box is also styled consistently with the body of the website.*/
+div.box p {
+color: #000;
+line-height: 1.8em;
+}
+/*The label element is set to a width that fits within the sidebar and the display set to "block" to force down to the next line the textarea 
+to the next line. Other styles are also applied including padding.*/
+div.box label {
+width: 280px;
+display: block;
+background: #efeaea;
+border: none;
+padding: 5px 0 5px 0;
+}
+/*The elements within the span are set to display as "block", floated to the left with a relative font size defined.*/
+div.box label span {
+display: block;
+color: #071b64;
+font-size: 100%;
+float: left;
+width: 100px;
+text-align: left;
+padding: 2px;
+}
+/*The width of the area to input the text are slightly less wider with a white background and text color set to black.*/
+div.box .input_text{
+padding: 5px;
+width: 260px;
+background: #ffffff;
+color: #000;
+}
+/*The message box is aligned with the other fields, assigned with an appropriate height and overflow property set to "auto" so that when there is an overflow 
+of text, a scroll bar will appear for users to see the rest of the content or can go back to a part of the text using the scroll bar.*/
+div.box .message {
+padding: 5px;
+width: 260px;
+background: #ffffff;
+color: #000;
+overflow: auto;
+height: 150px;
+}
+/*Users will specifically see the cursor change to a pointer when they hover over the Send button to indicate clearly that they can click on it to send the 
+text they have entered.*/
+div.box .button {
+margin-bottom: 15px;
+padding: 4px 0 4px 0;
+background: #cccccc;
+cursor: pointer;
+border: 1px solid;
+position: relative;
+top: 12px;
+left: 2px;
+right: 0;
+width: 100px;
+}
+/*Here is the CSS code for the footer div with the "clear property" foremost defined so that it stays where it should be (at the bottom of the page) and 
+does not get affected by the floated columns of the three-column layout, with reference to Louis Lazaris' (2009) article that helped me further with setting 
+the proper values of floated elements. The font-family is the same as the ones specified on the main and local navigations for uniformity while the font-size
+is set to x-small to make it less distracting but still legible as per Jakob Nielsen's (2004) article that states small fonts can be used for links placed 
+in a "secondary location such as a footer," which for this website serves as repeated global navigation links as I have indicated in my blueprint..*/
+#footer {
+clear: both;
+line-height: 1.75em;
+padding: 25px 3px 0 3px;
+font-family: Arial, Geneva, Verdana, sans-serif;
+font-size: 87%;
+text-align: center;
+}
+/*The list style is not specified to remove the bullets and displayed horizontally.*/
+#footer ul li {
+list-style: none;
+display: inline;
+}
+/*The underline is removed from the links with padding specified and colour set that remains consistent with the overall website design particularly in terms 
+of navigation.*/
+#footer li a {
+display: inline;
+padding: 5px 10px;
+color: #003366;
+text-decoration: none;
+}
+/*Again, the colour changes slightly as a style feature when hovered over.*/
+#footer a:hover {
+color: #4f7ed5;
+}
