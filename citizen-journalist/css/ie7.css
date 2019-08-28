@@ -1,0 +1,23 @@
+/*Internet Explorer 7 Conditional Comments to hover-gallery class*/
+
+/*Following the tutorial of Nathan Smith (2006), this stylesheet is specific to IE7 as indicated in the latest-news html file. Below, relative positioning is 
+specified on the a href instead of the containing li (as indicated in the master stylesheet).*/
+#hover-gallery a {
+position: relative;
+margin-top: 10px;
+}
+/*The z-index is set to the same value as the one on #hover-gallery a:hover .preview in the master stylesheet which works in browsers except in IE7. Since 
+relative positioning for IE7 is specified in the a href to make the hover effect work, the z-index is specified here.*/
+#hover-gallery a:hover {
+z-index: 1;
+}
+/*Slightly different negative values are given to the top and left properties for IE7 to similarly have the same hover effect as in other browsers.*/
+#hover-gallery a:hover .preview {
+top: -38px;
+left: -50px;
+}
+/*The position property is set to "static" for IE7 in the containing li, as it has already been set to relative in the a href for the hover to work in this 
+browser.*/
+#hover-gallery li {
+position: static;
+}

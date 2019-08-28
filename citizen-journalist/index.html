@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--NEW COMMENT: Comments on W3C standards compliance and recommendations were overlooked in the draf website and now placed to show understanding of 
+why the tags are indicated on all pages.-->
+<!--NEW COMMENT: Every page starts with the DOCTYPE declaration to be standards compliant (as per W3C) to ensure that all pages are consistently 
+displayed across browsers with reference to Freeman and Freeman (2006, 253). From XHTML 1.0 Transitional in the draft website, I changed the declaration to 
+XHTML 1.0 Strict for better structure and adaptability to style in different browsers while I learn how to keep my website up to up-to-date standards with 
+strict rules to go by, with reference to Freeman and Freeman (2006, 251).-->
+<!--NEW COMMENT: As a required tag in XHTML documents, the xmlns attribute is placed on all web pages as defined by W3C (with the w3c url specified), and the 
+"en" or English language specified, following W3C Recommendations with reference to Freeman and Freeman (2006, 274) textbook on the proper implementation of 
+XHTML.-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--NEW COMMENT: Following Freeman and Freeman's tutorial (2006, 240), the meta tag to specify content type including character encoding type below goes in the 
+head element. UTF-8 is used as recommended by W3C as well as by tutors on the discussion board. It is ensured that all pages are encoded without the "Unicode 
+Byte-Order Mark (BOM)", as the W3C states it is known to cause problems for some text editors and older browsers.-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--NEW COMMENT: The title below clearly describes information found on the page, which in this case is the home page hence, the title is specific to what 
+the website is about with reference to Freeman and Freeman (2006, 23). When the page is bookmarked or added to favorites, the title shows up as such. 
+The words used in the title relate to the keywords that rank high in Google and Bing search engine results, as indicated when I made my research for the 
+blueprint assignment amid the growing involvement of Web users in citizen journalism and humanitarian topics. Also in maintaning my decision stated in 
+the blueprint on file naming, I used relevant keywords without spaces (using the hyphen for more than two words as good practice), in lowercase and as 
+short as possible to improve search rank chances with reference to Freeman and Freeman (2006), Search Engine Watch (2007) and High Rankings (2001).-->
+<title>Humanitarian Writing for Citizen Journalists</title>
+<!--The meta description tag is used below to help improve search rankings, with reference to Freeman and Freeman (2006, 647) on how to implement this. Even 
+though not all search engines may index what's in the description tag, as Search Engine Watch (2007) suggests, it is still worth doing to enable "some degree 
+of control" over what crawlers will see as the website's description. The description has 247 characters (with space). According to Search Engine Watch, 
+generally between 200 to 250 characters in the content description may be indexed. The description contains keywords clearly describing what the website 
+is about.-->
+<meta name="description" content="This website explains how citizen journalists such as bloggers and anyone wired to the Internet can write about 
+humanitarian issues like a professional journalist would. This website also contains humanitarian photos and links to useful resources." />
+<!--The meta keywords tag is used below and in the rest of the website pages as another SEO means with references to Freeman and Freeman (2006, 647), Search 
+Engine Watch (2007) and SEO Logic (2001-2011) on the implementation and choice of relevant keywords/ keyword phrases that aptly describe the content information 
+and in conjunction with the text found in the body copy. The number of keywords/ keyword phrases are 11 that accurately describe the page, in particular 
+reference to SEO Logic's article, without abusing this meta tag. Additionally, the variation of a few keywords are limited, following the guidelines of High 
+Rankings (2001) article.-->
+<meta name="keywords" content="citizen journalist, citizen journalism, bloggers, blogs, social networking, breaking news, fifth estate, humanitarian crisis, 
+humanitarian writing, disaster stories, underreported issues." />
+<link type="text/css" rel="stylesheet" href="css/master.css" />
+</head>
+<body>
+<!--Divs are used throughout the design to provide structure to the main elements of my website, following Freeman and Freeman's (2006, 433) advice 
+on grouping main sections logically to make it easier to style them.-->
+<!--To achieve the desired structure stated above, I was guided by the tutorial of Russ Weakley (2010) specifically on a having a three-column layout, 
+which my website has. The div container below is used to "contain" the main elements of my website. It helped me specify properties like margins, background 
+and specifically the width to the ideal 960px size as per the advice of tutors on NED11's discussion board and in following one of the accessibility guidelines 
+I have previously referenced in my blueprint to Vitaly Friedman (2007), who said that content on the web must be presented within 1000px.-->
+<!--As for font sizes throughout the website, I was guided by the Freeman and Freeman (2006, 354) chapter on using keywords (mainly small and x-small) combined with percentages to 
+specify them for a more consistent appearance on browers. I also learned from Freeman and Freeman (2006, 358) how to change a font's weight using the 
+font-weight property specifically used in my website's headings.-->
+<!--NEW COMMENT: In naming the elements, I was guided by Jacob Gube's (2008) article, stating that the description should be about the actual purpose of say, a div or id 
+or what they are or what they do.-->
+<div id="container">
+<!--The div header falls under the div container along with the main navigation, local navigation, content,sidebar and footer. I was guided by the tutorial 
+of Russ Weakley (2010) as mentioned above.-->
+<!--The use of id attriutes used throughout the website design follows Freeman and Freeman's (2006, 415) guidelines on what elements are to be styled uniquely 
+because they appear only once on the page. For my website, this was used with the div element to style my header, navigation menus, sidebar and foooter 
+as well as the divs containing these.-->
+<div id="header">
+<!--The h1 and h3 elements are used throughout the website to provide the title of the website and tagline.
+NEW COMMENT: The website title is now linked to the homepage on every page of the website, following Lee Munroe's (2010) article on Smashing Magazine, stating that users tend to 
+look for the "Home" link (which I myself do by clicking on the banner even in the absence of a logo) in spite the presence of the main navigation bar. Styling 
+is also applied using a background image for the header (please see master css file).-->
+<h1>
+<a href="index.html">The Humanitarian Fifth Estate</a>
+</h1>
+<!--NEW COMMENT: The proper HTML entity for the single quotation mark is used in the tagline found throughout the website with reference to Harry Roberts' 
+(2011) article on technical typography on the Web.-->
+<h3>A citizen journalist&rsquo;s guide to humanitarian writing</h3>
+</div>
+<!--To create the main navigation, I used an unordered list wrapped in a div as I learned this solution to be semantically sound as well as good for accessibility 
+and usability, coinciding with my website objectives. Using the list element is implemented with reference to the articles of Soh Tanaka (2009), Rachel Andrew 
+(2009) and Roger Johansson (2005).-->
+<div id="navigation">
+<!--NEW COMMENT (WITH ADDITIONAL REFERENCES ON TOP OF FREEMAN & FREEMAN): The title attribute is used for the Writing Tools and Humanitarian Gallery menu links 
+in the main navigation to adhere to the standard accessibility guideline of the W3C (2008) as a useful feature particularly to the visually impaired. Proper 
+implementation was done using knowledge gained from the Freeman and Freeman (2006, 149) textbook and upon checking with best practices and guidelines in articles 
+from Search Engine Journal(2008), Roger Johansson (2004) and Jakob Nielsen (1998).
+NEW COMMENT: The title attribute is not used for the links to index/ home page, About me & contact as well as with other links that, from the link anchors, are 
+already obvious to users where they will be led to when they click on it. This is in reference to the articles of Ann Smarty (2008) and Jakob Nielsen 1998).-->
+<ul>
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="writing-tools.html" title="How to write humanitarian stories">Writing tools</a>
+</li>
+<li>
+<a href="humanitarian-gallery.html" title="A gallery of humanitarian issues and pictures">Humanitarian gallery</a>
+</li>
+<li>
+<a href="about-me.html">About me &amp; contact</a>
+</li>
+</ul>
+</div>
+<!--An unordered list is likewise used for the local navigation this time vertically positioned, confirming what I have specified in my blueprint 
+that a left-hand side vertical navigation will be used for my sub-menus as a usable method in reference to Cameron Chapman's (2011) article, which 
+mentioned that most users tend to read or scan a page from left to right. In implementing this particular style, I was guided by Mark Newhouse's (2002) 
+article with additional references to the articles of Soh Tanaka (2009), Rachel Andrew (2009) and Roger Johansson (2005) on turning lists into navigation 
+menus. In creating this along with the horizontal navigation, I learned that simply specifying the list-style to "none" will remove the bullets. Indicating 
+that the display is "inline" as against to "block" spells the difference between having a horizontal and vertical style of menu. -->
+<!--NEW COMMENT: The tutorial of Max Design (2010) was unintentionally overlooked in the draft website as a reference to the creation of my vertical navigation 
+particularly on making the left-indentation of unordered lists work for different browsers by specifying the margin and padding values to "0" and targetting 
+nested list items to make a visual distinction between the main sections (Writing Tools and Humanitarian Gallery) and the sub-sections of each.-->
+<div id="left-navigation">
+<ul>
+<li>
+<!--NEW COMMENT: The title attribute as a tool tip is used for accessibility to show users what the Writing tools and Humanitarian gallery links are about,  
+with reference to Freeman and Freeman (2006, 149) textbook and upon checking with best practices and guidelines in articles from Search Engine Journal(2008), 
+Roger Johansson (2004) and Jakob Nielsen (1998) on correct usage. The title attribute is not used for the links to Asking focused questions, Finding your 
+angle, Wrapping & extras, Latest news & pictures, Underreported issues and Useful resources along with other links throughout the website that, from the link 
+anchors, are already obvious to users where they will be led to when they click on it. This is in reference to the articles of Ann Smarty (2008) 
+and Jakob Nielsen 1998).-->
+<a href="writing-tools.html" title="How to write humanitarian stories">Writing tools</a>
+<ul>
+<li>
+<a href="writing-tools/asking-focused-questions.html">Asking focused questions</a>
+</li>
+<li>
+<a href="writing-tools/finding-your-angle.html">Finding your angle</a>
+</li>
+<li><a href="writing-tools/wrapping-up.html">Wrapping up &amp; extras</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="humanitarian-gallery.html" title="A gallery of humanitarian issues and pictures">Humanitarian gallery</a>
+<ul>
+<li>
+<a href="humanitarian-gallery/latest-news.html">Latest news &amp; pictures</a>
+</li>
+<li>
+<a href="humanitarian-gallery/underreported-issues.html">Underreported issues</a>
+</li>
+<li>
+<a href="humanitarian-gallery/useful-resources.html">Useful resources</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!--This div is used to give structure to the content of the website again in reference to Russ Weakley's (2002) article on having a three-column layout 
+design. This particular section falls under the second column of the layout. The article helped me define the appropriate width, margin and padding while 
+using the float element. I used the line height and length properties for optimal legibility and white space consideration as per Vitaly Friedman's (2007) 
+recommendation to have between 60-80 characters per line to achieve this. The text on my website has an average of 60 characters per line using the font types 
+I have specified in my blueprint and identified in the stylesheet by their corresponding font-families namely, "Arial, Geneva, Verdana, sans-serif" for headings 
+and "Georgia, Times, serif" for the body with reference to Freeman and Freeman (2006, 347) on how font-family specifications work.-->
+<div id="content">
+<!--The h2 tag is used throughout the website to provide heading to the text that introduces what a particular web page or section contains and other 
+information.-->
+<h2>Mobilising citizen journalists for humanitarian coverage</h2>
+<p>Never has citizen journalism become more relevant, vital and even controversial in the delivery of news and information in this day and age.</p>
+<!--OLD COMMENT: The <q> element is used for throughout the website instead of typing in double quotes to follow proper structuring of texts as per the advice 
+of Freeman and Freeman (2006, 87).-->
+<!--NEW COMMENT: The HTML entity for double quotation marks is used, with reference again to Harry Roberts' (2011) article on Smashing Magazine, to replace 
+the <q> element initially used for quoted phrases. The double quotes using the <q> element do not show in IE7.
+The <strong> and <em> elements are used below and throughout the website (but not excessively) to emphasize certain key phrases, not for the purpose of 
+styling them with reference to Freeman and Freeman (2006, 362). -->
+<p>Bloggers and practically anyone wired to the Internet &ndash; otherwise known as the <strong>&ldquo;Fifth Estate&rdquo;</strong> &ndash; are beating traditional media to the punch in breaking 
+news stories. This is particularly evident in disasters and humanitarian crises with netizens crowding social media with information faster than you can say &lsquo;tweet&rsquo;.
+</p>
+<p>But beyond breaking news lies an abundance of issues in humanitarian emergencies.</p> 
+<!--NEW COMMENT: A new paragraph is created to create space with reference to Web Designer Wall's (2007) guidelines on creating space for my website's content.-->
+<p>Professional journalists specialising in humanitarian coverage are lacking in 
+numbers. This is where citizen journalists can step in to fill the void through the art of storytelling, guided by journalistic values that many media 
+professionals say are lost in the wired, wired world of social networking.
+</p>
+<!--The h3 tag is used throughout the website to introduce the two sub-menus of the website with both the headings and images linking directly to their 
+respective pages. More about this below.-->
+<h3>
+<!--The <a> element with the href attribute is used below to create links out of the images, which I have made into thumbnail versions of the main photos 
+found on the sub-menus namely, Writing Tools and Humanitarian Gallery. I was able to do this using the knowledge I gained from Freeman and Freeman's (2006, 199) 
+textbook.-->
+<!--I learned to float the images to the left with the text wrapping them by following Louis Lazaris' (2009) tutorial on the CSS float property.-->
+<!--NEW COMMENT: I have prepped the images (scanned at 300dpi) suitable for web delivery using Photoshop's Save for Web option as learned from the Freeman 
+and Freeman (2006) textbook including setting the quality to medium to reduce the file size and download time.-->
+<!--I again used the title attribute for the sub-menus, gained from reading the Freeman and Freeman (2006, 149) textbook to improve my website's accessibility.-->
+<!--NEW COMMENT: The alt and title attributes are used for the images that link to the Writing tools and Humanitarian gallery pages to improve accessibility, 
+as text alternatives are provided for the image and tool tips, with reference to Joe Clark's (2002) article.-->
+<a href="writing-tools.html"><img src="images/christchurch-quake-small.jpg" alt="Earthquake survivors struggle to get out of a building in Christchurch"  
+title="Click to view Writing tools" width="120" height="110" /></a>
+<a href="writing-tools.html" title="How to write humanitarian stories">Writing tools for you</a>
+</h3>
+<p>How do you combine journalistic training and values with ordinary citizens&rsquo; passion for online storytelling? This online tutorial is designed to help 
+you, the citizen journalist, write humanitarian stories like a professional would with the following as <strong>guiding principles</strong>: 
+</p>
+<ul>
+<!--The "guiding principles" of the Writing Tools sub-menu is highlighted and separated from the introduction using the unordered list element, learned from 
+the Freeman and Freeman (2006, 105) textbook.-->
+<li>Practising accuracy and striking for balance in a story</li>
+<li>Finding creative ways to write compelling stories</li>
+<li>Gaining a more informed view of humanitarian issues</li>
+</ul>
+<!--I used the button element as a means of asking readers to know more about the topic on the page (in this case, how to write humanitarian stories, which 
+offers the main substance of the website guided by steps on how to write such stories). From reading the articles of Janko Jovanovic (2009), Jakob Nielsen 
+(2007) and Andrew Maier (2008), I felt this was the way to go as a "call to action" means so that readers can learn more about or start exploring the topic. I 
+used the button element specifically for Writing Tools.--> 
+<!--The class attribute is used for the button guided by the tutorial of Janko Jovanovic (2009) on its basic styling. I applied my basic knowledge of Photoshop 
+combined with the tutorials from different modules in NED11 to create a button image used in Writing Tools and its sub-sections. I learned how to use the 
+background-image property and make it work together with the text written in HTML with reference to Freeman and Freeman (2006, 404) on adding background images.-->
+<!--NEW COMMENT: The title attribute is added for accessibility.-->
+<a class="button" href="writing-tools.html" title="Go to Writing tools">Learn more</a>
+<br />
+<br />
+<h3>
+<!--NEW COMMENT: The alt and title attributes are used for the image that link to the Humanitarian gallery sub-section for accessibility with reference to Joe 
+Clark's (2002) article.-->
+<a href="humanitarian-gallery.html"><img src="images/hunger-small.jpg" alt="A World Food Programme 2009 ad on starvation" 
+title="Click to view Humanitarian gallery" width="120" height="90" /></a>
+<a href="humanitarian-gallery.html" title="A gallery of humanitarian issues and pictures">Humanitarian gallery</a>
+</h3>
+<p>What are making headlines around the humanitarian world? What do &ldquo;underreported issues&rdquo; mean? How do you know when a crisis is really a crisis?
+</p>
+<p>Visit the gallery to get some insights into these questions.
+</p>
+<!--I also used the button element under the Humanitarian Gallery section as a call to action method.-->
+<!--NEW COMMENT: The title attribute is added for accessibility, and repeated in the rest of the links throughout the website.-->
+<a class="button" href="humanitarian-gallery.html" title="Go to Humanitarian gallery">Learn more</a>
+<br />
+<br />
+<!--I placed the "Back to top" link below each page of the website which I have learned how to do from Freeman and Freeman (2006, 51) and keeping this 
+simple element in mind as a usable feature of a website, according to an article by Matt Cronin (2009), among others that have highlighted the importance 
+of having this function available to users. Although Cronin's article mentioned that this link is usually found in the footer, I decided to use it after 
+the text of the main content and just above the footer itself because it appears to be more visible that way.-->
+<a href="index.html">Back to top</a>
+</div>
+<!--The div below is used as part of what I learned from Russ Weakley's (2010) layout tutorial along with Max Design's. In this case, I used the sidebar to 
+contain several images appearing throughout the website and make them float along with the blockquotes, which have the background image I have modified 
+using Photoshop.-->
+<!--NEW COMMENT: The div class named "floatright" replaced the img class in the draft website in order to float both images and captions within the sidebar 
+div which I initially had trouble doing. But with combined references to Max Design's tutorial (2010) and Bert Bos' article (2011), I was able to implement 
+the desired changes. The same knowledge gained from Louis Lazaris' (2009) article on the CSS float property is applied in order to let the captions wrap 
+around the floated images.-->
+<div id="sidebar">
+<div class="floatright">
+<!--NEW COMMENT: The alt attribute is used throughout the website as another accessibility feature with references to the W3C (2008) and Freeman and Freeman 
+(2006, 176) on providing text alternatives to images.-->
+<img src="images/citizen-journalists.jpg" alt="TIME named ordinary citizens as Person of the Year in 2006." width="290" height="200" /><br />
+<!--NEW COMMENT: I decided to add captions to images so as to provide readers with information and some insight into what image they are looking at (and not 
+let them guess what's going on in the picture) with reference to Cameron Chapman's (2006) article.-->
+<p>TIME named ordinary citizens as Person of the Year in 2006 amid the rise of user-generated content on the Web and subsequent transformation of the 
+Information Age. Below, a child stands in a field in South Sudan, whose plight as one of the poorest countries in the world needs more media attention.</p>
+<img src="images/sudan-child.jpg" alt="A child stands in a field in southern Sudan." width="290" height="180" /><br />
+</div>
+<blockquote>
+<p>&ldquo;Citizen journalists, which today broadly means anyone with an Internet connection and an interest in the news, are part of the solution, not 
+the problem.&rdquo; &mdash; Turi Munthe, founder of open newswire service, Demotix
+</p>
+</blockquote>
+</div>
+<!--An unordered list wrapped in a div is used for the footer with the same references to the articles of Soh Tanaka (2009), Rachel Andrew (2009) and Roger 
+Johansson (2005). Similar to the main navigation, the list-style is specified to "none" to remove the bullets, and displayed as "inline" as it is horizontal.-->
+<div id="footer">
+<ul>
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="writing-tools.html">Writing tools</a>
+</li>
+<li>
+<a href="humanitarian-gallery.html">Humanitarian gallery</a>
+</li>
+<li>
+<a href="about-me.html">About me &amp; contact</a>
+</li>
+</ul>
+<p>Created by Ann Bernadette Corvera. 2011</p>
+</div>
+</div>
+</body>
+</html>
+<!--Content References list here (additional references to UN and CNN websites and TIME magazine as indicated as well in Progress Report):
+AlertNet. 2011. AlertNet for Journalists: E-Learning. Accessed September 19, 2011, http://www.trust.org/alertnet/alertnet-for-journalists/e-learning/.
+
+Angeletti, Norberto and Alberto Oliva. 2010. TIME: The Illustrated History of the World’s Most Influential Magazine. New York, USA: Rizzoli International Publications, Inc.
+
+Baker, Simon – Reuters. 2011. “Briefing: Closeup.” TIME, March 7.  
+
+Bayuni, Endy. 2001. International Press Institute Report Brave News Worlds: Navigating the New Media Landscape. Accessed September 22, 2011, http://www.freemedia.at/fileadmin/media/Images/World_Congress_2010/Brave_News_World_IPI_Poynter.pdf.
+
+"Deadly Outbreak of Acute Watery Diarrhoea Spreads Across Horn of Africa - UN". 2011. UN News Centre. Accessed November 20, 2011, http://www.un.org/apps/news/story.asp?NewsID=40475&Cr=horn+of+africa&Cr1=.
+
+“Donkeys Come to the Rescue in Pakistan Floods”. 2010. Reuters Africa. Accessed September 30, 2011, http://af.reuters.com/article/oddlyEnoughNews/idAFTRE67F14920100816.
+
+"Efforts to Prevent and Treat HIV/AIDS are Yielding Progress - UN Report". 2011. UN News Centre. Accessed November 20, 2011, http://www.un.org/apps/news/story.asp?NewsID=40456&Cr=HIV&Cr1=AIDS.
+
+“Elephants Used to Clear Tsunami Debris”. 2005. Fox News. Accessed September 30, 2011, http://www.foxnews.com/story/0,2933,147439,00.html.
+
+"Facebook". 2010. TIME, May 31.
+
+Freeman, Eric and Freeman, Elizabeth. 2006. Head First HTML with CSS & XHTML. Sebastopol, CA: O’Reilly.
+
+Friedlander, Edward Jay, John Lee. 2011. Feature Writing The Pursuit of Excellence. USA: Pearson Education, Inc.
+
+Gerbehaye, Cédric. 2010. “2010: The Year in Pictures.” TIME, December 20.
+
+Hammond, Robin. 2010. “Cursed Stones.” TIME, November 22.
+
+"How Will Libya's New Cabinet Meet the Challenges Ahead?" 2011. CNN. Accessed November 20, 2011,http://edition.cnn.com/2011/11/23/world/africa/libya-cabinet/index.html?iref=allsearch.
+
+Integrated Regional Information Networks (IRIN) 2011. Accessed September 22, 2011, http://www.irinnews.org/about.aspx.
+
+International Press Institute. 2010. IPI Report Brave News World: Navigating the New Media Landscape. Accessed September 22, 2011, http://www.freemedia.at/fileadmin/media/Images/World_Congress_2010/Brave_News_World_IPI_Poynter.pdf.
+
+Internews. 2011. Accessed September 19, 2011, http://www.internews.org/about/default.shtm.
+
+McKenzie, Alison Bethel. 2010. International Press Institute Report Brave News Worlds: Navigating the New Media Landscape. Accessed September 22, 2011, http://www.freemedia.at/fileadmin/media/Images/World_Congress_2010/Brave_News_World_IPI_Poynter.pdf.
+
+Mitchell, Bill, Jeff Jarvis, Alan Rusbridger, Turi Munthe, ¬Clay Shirky, William H. Dutton, Roy Greenslade et al. 2010. “International Press Institute Report Brave News Worlds: Navigating the New Media Landscape.”  
+
+Munthe, Turi. 2010. International Press Institute Report Brave News Worlds: Navigating the New Media Landscape. Accessed September 22, 2011, http://www.freemedia.at/fileadmin/media/Images/World_Congress_2010/Brave_News_World_IPI_Poynter.pdf.
+
+Nachtwey, James. 2011. “The Day the Earth Moved.” TIME, March 28.
+
+Nahr, Dominic. 2010. “Battling A Scourge.” TIME, June 28.
+
+Nahr, Dominic. 2011. “Can Sudan Split Without Falling Apart?” TIME, January 10.
+
+Nahr, Dominic. 2011. “The TIME 100” TIME, May 2.
+
+Platon. 2011. “The First Lady of Freedom.” TIME, January 10.
+
+ReliefWeb. 2005. World Disasters Report 2005.Accessed September 22, 2011, http://reliefweb.int/node/22327
+
+Ross, Steven S. 2004. “Toward New Understandings: Journalists and Humanitarian Relief Coverage.” Executive Summary. Accessed September 22, 2011, http://www.fritzinstitute.org/PDFs/Case-Studies/Media_study_ExcSum.pdf.
+
+Stanmeyer, John. 2009. “The End of Plenty.” National Geographic, June.
+
+“Sichuan Earthquake”. 2009. The New York Times. Accessed September 30, 2011, http://topics.nytimes.com/topics/news/science/topics/earthquakes/sichuan_province_china/index.html.
+
+“Six Months After Cyclone Yasi, Heartbreak Remains”. 2011. The Courier Mail. Accessed September 30, 2011, http://www.couriermail.com.au/news/queensland/six-months-after-cyclone-yasi-heartbreak-remains/story-e6freoof-1226107160721.
+
+"UN Officials Urge Global Focus on New Challenges to Peace and Security". 2011. UN News Centre. Accessed November 20, 2011, http://www.un.org/apps/news/story.asp?NewsID=40503&Cr=global+challenges&Cr1=.
+
+"UN Rights Chief Deplores Killing of Protesters in Egypt". 2011. UN News Centre. Accessed November 20, 2011, http://www.un.org/apps/news/story.asp?NewsID=40490&Cr=Egypt&Cr1=.
+
+“When You’re Starving.” 2009. TIME, January 19.
+-->

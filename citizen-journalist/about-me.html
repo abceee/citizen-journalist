@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--NEW COMMENT: The title below clearly describes information found on the page, which in this case is the About me and contact page hence, the title is 
+specific to the author and how to contact me for any stories to share or feedback about the website.-->
+<title>About me &amp; contact-Humanitarian Writing for Citizen Journalists</title>
+<!--The meta description tag is used below to help improve search rankings, with reference to Freeman and Freeman (2006, 647) on how to implement this. Even 
+though not all search engines may index what's in the description tag, as Search Engine Watch (2007) suggests, it is still worth doing to enable "some degree 
+of control" over what crawlers will see as the website's description. The description has 183 characters (with spaces).-->
+<meta name="description" content="This web page contains information about the author and contact form for citizen journalists who have any feedback on the 
+humanitarian writing tutorial or would like to share a story." />
+<!--The meta keywords tag is used below and in the rest of the website pages as another SEO means with references to Freeman and Freeman (2006, 647), Search 
+Engine Watch (2007) and SEO Logic (2001-2011) on the implementation and choice of relevant keywords/ keyword phrases that aptly describe the content information 
+and in conjunction with the text found in the body copy. The number of keywords/ keyword phrases are at 5. -->
+<meta name="keywords" content="citizen journalist, citizen journalism, humanitarian writing, humanitarian advocacy, socially relevant stories. " />
+<link type="text/css" rel="stylesheet" href="css/master.css" />
+</head>
+<body>
+<div id="container">
+<div id="header">
+<h1>
+<a href="index.html" title="Back to home">The Humanitarian Fifth Estate</a>
+</h1>
+<h3>A citizen journalist&rsquo;s guide to humanitarian writing</h3>
+</div>
+<div id="navigation">
+<ul>
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="writing-tools.html" title="How to write humanitarian stories">Writing tools</a>
+</li>
+<li>
+<a href="humanitarian-gallery.html" title="A gallery of humanitarian issues and pictures">Humanitarian gallery</a>
+</li>
+<li>
+<a href="about-me.html">About me &amp; contact</a>
+</li>
+</ul>
+</div>
+<div id="left-navigation">
+<ul>
+<li>
+<a href="writing-tools.html" title="How to write humanitarian stories">Writing tools</a>
+<ul>
+<li>
+<a href="writing-tools/asking-focused-questions.html">Asking focused questions</a>
+</li>
+<li>
+<a href="writing-tools/finding-your-angle.html">Finding your angle</a>
+</li>
+<li>
+<a href="writing-tools/wrapping-up.html">Wrapping up &amp; extras</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="humanitarian-gallery.html" title="A gallery of humanitarian issues and pictures">Humanitarian gallery</a>
+<ul>
+<li>
+<a href="humanitarian-gallery/latest-news.html">Latest news &amp; pictures</a>
+</li>
+<li>
+<a href="humanitarian-gallery/underreported-issues.html">Underreported issues</a>
+</li>
+<li>
+<a href="humanitarian-gallery/useful-resources.html">Useful resources</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="content">
+<h2>About me</h2>
+<p>Hi, I'm <strong>Ann</strong>.</p>
+<p>Writing is my passion and advocacy is my mission. That is, advocacy for anything humanitarian especially sharing to the world socially relevant stories 
+that are told truthfully, accurately and compellingly. In my 13 years of journalism experience, no other topic has touched my soul.
+</p>
+<p>Like you, I strive to keep learning and practising. After all, as Sir Arthur Conan Doyle once said: <em>“Education never ends, Watson.”</em>
+</p>
+<p>In journalism, it couldn’t be any truer. 
+</p>
+<p>Thanks for stopping by and keep writing!</p>
+</div>
+<!--OLD COMMENT: The contact form below is placed within the sidebar div for users to readily see it with reference to Vikash Singh's (2010) article on how to 
+create a basic form using HTML and CSS.-->
+<!--ADDITIONAL COMMENTS: The form element is used to create the contact form with action defined as "#" as a dummy link, as there is no server to process 
+the form and send it to (from my understanding on the "Submit button" thread on the discussion board, forms don't necessarily have to work for this). 
+The "post" method is used as a means to send the data from the browser to the server with reference to Freeman and Freeman (2006, 620), which said that "post" 
+is the more appropriate method than "get" when sending feedbacks and other private data plus, the textarea element is used for this form specifically 
+for user feedback on the site.-->
+<div id="sidebar">
+<form action="#" method="post">
+<!--NEW COMMENT: The class selector is used in order for the several elements within this class to be styled, with reference to W3 Schools (2011) and Freeman 
+and Freeman (2006, 415).-->
+<div class="box">
+<!--NEW COMMENT: The heading to the form is in h4 tag with a short paragraph introducing the means to send their feedback.-->
+<h4>What's on your mind?</h4>
+<p>Got a feedback or story to share? Or maybe you just want to say hello? Feel free to contact me below.</p>
+<!--NEW COMMENT: The label element is used to enable definition for the input element and according to Freeman and Freeman (2006, 632), allows for easier 
+styling using CSS. The input type is indicated as text allowing for a line of text to be entered which would be the name of the user followed by the person's 
+email address, and subject of the message.-->
+<label>
+<!--NEW COMMENT: The span element is used to group together the inline elements, which are styled accordingly in the CSS file with additional reference to 
+Freeman and Freeman (2006, 464).-->
+<span>Full name</span>
+<input type="text" class="input_text" name="name" id="name" />
+</label>
+<label>
+<span>Email</span>
+<input type="text" class="input_text" name="email" id="email" />
+</label>
+<label>
+<span>Subject</span>
+<input type="text" class="input_text" name="subject" id="subject" />
+</label>
+<label>
+<span>Message</span>
+<!--NEW COMMENT: The textarea class is for entering multiple lines for whatever the user will send, and is further defined with the columns and rows attributes 
+for the number of characters to make the textarea.-->
+<textarea class="message" name="feedback" id="feedback" rows="6" cols="50"></textarea>
+<input type="button" class="button" value="Send" />
+<!--NEW COMMENT: The closing label, form and div tags are placed in proper sequence below.-->
+</label>
+</form>
+</div>
+</div>
+<div id="footer">
+<ul>
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>
+<a href="writing-tools.html">Writing tools</a>
+</li>
+<li>
+<a href="humanitarian-gallery.html">Humanitarian gallery</a>
+</li>
+<li>
+<a href="about-me.html">About me &amp; contact</a>
+</li>
+</ul>
+<p>Created by Ann Bernadette Corvera. 2011</p>
+</div>
+</div>
+</body>
+</html>
